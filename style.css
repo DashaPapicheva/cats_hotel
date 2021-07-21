@@ -1,0 +1,392 @@
+@font-face {
+    font-family: 'Lato Medium';
+    src: url(font/Lato-Medium.ttf);
+}
+
+/* Минимальный сброс стилей */
+
+html, 
+body,
+* {
+	margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+
+/* Общие стили */
+
+body {
+    background-color: #FFFEFD;
+    font-family: 'Lato Medium', sans-serif;
+    color: #1A212F;
+}
+h1, h2, h3 {
+    font-family: 'Rubik', sans-serif;
+}
+h2 {
+    font-size: 36px;
+}
+h3 {
+    font-size: 22px;
+    font-weight: 500;
+}
+a {
+    color: #1A212F;
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+
+
+/* Стили header */
+
+header {
+    max-width: 1170px;
+    margin: 12px auto 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    width: 405px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+
+/* Стили главного блока */
+
+main {
+    max-width: 1366px;
+    margin: 9px auto 0;
+}
+
+/* Стили главного баннера */
+
+.main_banner {
+    height: 504px;
+    display: flex;
+    align-items: center;
+    background-image: url(assets/main-banner.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #FFAA50;
+}
+.main_banner_text {
+    margin-left: 198px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3px;
+}
+.city {
+    font-size: 14px;
+}
+h1 {
+    font-size: 62px;
+    line-height: 69px;
+}
+.description {
+    margin-top: 6px;
+    font-size: 20px;
+}
+.main_banner_text a {
+    width: 206px;
+    display: inline-block;
+    margin-top: 35px;
+    padding: 14px 63px 17px 30px;
+    background-color: #FFFEFD;
+    background-image: url(assets/pawInRound.svg);
+    background-size: 36px;
+    background-repeat: no-repeat;
+    background-position: 96% 50%;
+    box-shadow: 0px 5px 25px rgba(26, 33, 47, 0.1);
+    border-radius: 25px;
+    font-size: 16px;
+}
+
+
+/* Стили раздела преимуществ "Почему мы" */
+
+.advantages {
+    padding-top: 131px;
+    text-align: center;
+    background-image: url(assets/paw.svg);
+    background-repeat: no-repeat;
+    background-position: 100% .7%;
+}
+.specific_adv {
+    max-width: 1170px;
+    margin: 42px auto 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: left;
+}
+.specific_adv div {
+    width: 370px;
+    margin-top: 20px;
+    padding: 30px 30px 26px 30px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+    border-radius: 8px;
+}
+.specific_adv div:last-child {
+    padding-bottom: 70px;
+}
+.specific_adv h3 {
+    margin-top: 25px;
+}
+.specific_adv p {
+    margin-top: 9px;
+    line-height: 22px;
+}
+
+
+/* Стили раздела о номерах */
+
+.about_rooms {
+    padding-top: 130px;
+    z-index: -1;
+    text-align: center;
+    background-image: url(assets/fish.svg);
+    background-repeat: no-repeat;
+    background-position: 0 26%;
+}
+.whole_room_descr {
+    width: 1030px;
+    position: relative;
+    min-height: 404px;
+    margin: 62px auto 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.room_pict {
+    position: absolute;
+    left: 0;
+    z-index: 0;
+}
+.room_descr {
+    margin-bottom: 3px;
+    padding: 34px 116px 40px 100px;
+    z-index: 10;
+    text-align: left;
+    box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+    border-radius: 8px;
+    background-color: #FFFFFF;
+}
+.room_descr ul {
+    margin: 14px 0 0 20px;
+    list-style-image: url(assets/round.svg);
+    font-size: 16px;
+}
+.room_descr ul li {
+    padding-left: 1px;
+    line-height: 33px;
+}
+.room_descr a {
+    width: 206px;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 60px 17px 31px;
+    background-color: #FF7236;
+    background-image: url(assets/pawInWhiteRound.svg);
+    background-size: 36px;
+    background-repeat: no-repeat;
+    background-position: 96% 50%;
+    box-shadow: 0px 5px 25px rgba(26, 33, 47, 0.1);
+    border-radius: 25px;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFEFD;
+}
+
+
+/* Стили кнопок слайдера */
+
+.block_with_button_area {
+    width: 1030px;
+    margin: 39px auto 0;
+    display: flex;
+    justify-content: flex-end;
+}
+.button_area {
+    width: 545px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.button_area a {
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 12px rgba(173, 152, 143, 0.25);
+    border-radius: 50%;
+}
+.radio_butt {
+    margin-top: 2px;
+}
+input[type="radio"] {
+    margin-right: 8px;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    box-sizing: content-box;
+    background-clip: content-box;
+    background-color: #E1E1E1;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    outline: none;
+    border-radius: 50%;
+}
+input[type="radio"]:checked {
+    background-color: #FAC663;
+}
+.with_arrows {
+    height: 38px;
+    padding-top: 2px;
+    display: flex;
+    align-items:center;
+}
+.left_arrow {
+    margin-right: 10px;
+    padding: 8px 16px 10px 14px;
+}
+.right_arrow {
+    padding: 8px 14px 10px 16px;
+}
+
+/* Стили блока с отзывами */
+
+.feedback {
+    padding-top: 132px;
+    text-align: center;
+    background-image: url(assets/paw-2.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 12%;
+    overflow: hidden;
+}
+#feedback_blocks {
+    width: 1500px;
+    margin-top: 62px;
+    margin-left: 98px;
+    display: flex;
+    justify-content: space-between;
+}
+.feedback_block {
+    margin-right: 30px;
+    padding: 30px 35px 31px 70px;
+    position: relative;
+    text-align: left;
+    box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    font-size: 16px;
+}
+.feedback_block::before {
+    position: absolute;
+    top: 34px;
+    left: 38px;
+    content: url(assets/mark.svg);
+}
+.feedback_words {
+    width: 365px;
+}
+.feedback_words p {
+    line-height: 22px;
+}
+.name_date {
+    margin-top: 17px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #848484;
+}
+.feedback .block_with_button_area {
+    margin-top: 40px;
+    padding-bottom: 10px;
+}
+
+
+/* Стили блока по локации */
+
+.contact_info {
+    margin-top: 131px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #FAC663;
+}
+.contact_info_block { 
+    margin-top: 61px;
+}
+.contact_info_words {
+    width: 370px;
+}
+.contact_info h2 {
+    padding-bottom: 37px;
+}
+.info_details {
+    margin-bottom: 28px;
+}
+.info_details h4 {
+    font-size: 16px;
+}
+.info_details div {
+    margin-top: 8px;
+    line-height: 19px;
+    font-size: 16px;
+}
+.address div {
+    margin-top: 9px;
+}
+#social_nets {
+    margin-top: 12px;
+}
+#social_nets a {
+    margin-right: 16px;
+}
+.contact_info_map {
+    position: relative;
+    display: flex;
+}
+.map_cat {
+    position: absolute;
+    bottom: 256px;
+    left: 248px;
+}
+
+/* Стили подвала */
+
+footer {
+    padding-top: 12px;
+}
+.footer_with_nav, 
+.policy {
+    max-width: 970px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.with_long_border {
+    margin-top: 7px;
+    border-top: 1px solid #EFEFEF;
+}
+.policy {
+    padding-top: 19px;
+    font-size: 12px;
+    color: #8F8F8F;
+}
+.policy span {
+    padding-left: 1px;
+}
+.policy a {
+    color: #8F8F8F;
+}
